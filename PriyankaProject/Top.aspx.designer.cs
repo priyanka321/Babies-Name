@@ -10,7 +10,7 @@
 namespace PriyankaProject {
     
     
-    public partial class Top {
+    public partial class WebForm2 {
         
         /// <summary>
         /// etyear control.
