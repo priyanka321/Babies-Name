@@ -5,22 +5,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+      
+      <nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="Default.aspx" class="brand-logo" style="color:white">BEYOND NAMES</a>
+      <ul class="right hide-on-med-and-down" >
+         <li style="color:white"><a href="Default.aspx">Home</a></li>
+            <li style="color:white"><a href="Top.aspx">Top</a></li>
+           <li style="color:white"><a href="Trend.aspx">Trend</a></li>
+            <li style="color:white"><a href="#Contact">Contact</a></li>
+        
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+         <li style="color:white"><a href="#">Home</a></li>
+            <li style="color:white"><a href="Top.aspx">Top</a></li>
+           <li style="color:white"><a href="Trend.aspx">Trend</a></li>
+            <li style="color:white"><a href="#">Contact</a></li>
+           
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+    
     <div>
         <asp:ContentPlaceHolder ID="body" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
-    </form>
+   
+
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
 
 
 
-
-    <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
 
 </body>
 </html>
