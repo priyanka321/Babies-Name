@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,6 +60,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\chosen.css" />
     <Content Include="css\materialize.css" />
     <Content Include="css\materialize.min.css" />
     <Content Include="css\style.css" />
@@ -64,7 +68,9 @@
     <Content Include="font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="images\baby1.jpg" />
     <Content Include="images\baby2.jpg" />
+    <Content Include="js\chosen.jquery.min.js" />
     <Content Include="js\init.js" />
+    <Content Include="js\jquery.form-validator.min.js" />
     <Content Include="js\materialize.js" />
     <Content Include="js\materialize.min.js" />
     <Content Include="SiteMaster.Master" />
@@ -87,6 +93,7 @@
     <Content Include="font\roboto\Roboto-Thin.ttf" />
     <Content Include="font\roboto\Roboto-Thin.woff" />
     <Content Include="font\roboto\Roboto-Thin.woff2" />
+    <Content Include="Test.aspx" />
     <Content Include="Top.aspx" />
     <Content Include="Trend.aspx" />
     <None Include="Web.Debug.config">
@@ -102,9 +109,11 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteMaster.Master.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
@@ -119,6 +128,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Top.aspx.cs">
       <DependentUpon>Top.aspx</DependentUpon>

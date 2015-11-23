@@ -23,7 +23,15 @@
          <li style="color:white"><a href="Default.aspx">Home</a></li>
             <li style="color:white"><a href="Top.aspx">Top</a></li>
            <li style="color:white"><a href="Trend.aspx">Trend</a></li>
-            <li style="color:white"><a href="#Contact">Contact</a></li>
+              <%  string pageName = System.IO.Path.GetFileNameWithoutExtension(Request.Path);
+              
+              if(pageName.Contains("Default"))
+              {
+              
+              %>
+            <li style="color:white"><a href="#contactus">Contact</a></li>
+
+          <%} %>
         
       </ul>
 
@@ -31,7 +39,15 @@
          <li style="color:white"><a href="#">Home</a></li>
             <li style="color:white"><a href="Top.aspx">Top</a></li>
            <li style="color:white"><a href="Trend.aspx">Trend</a></li>
-            <li style="color:white"><a href="#">Contact</a></li>
+          <% 
+              
+              if(pageName.Contains("Default"))
+              {
+              
+              %>
+            <li style="color:white"><a href="#contactus">Contact</a></li>
+
+          <%} %>
            
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>

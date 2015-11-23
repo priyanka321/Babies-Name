@@ -2,7 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
    
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+
+
+  <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
 
   
 
@@ -73,7 +75,7 @@
     <div class="parallax"><img src="images/baby2.jpg" alt="Unsplashed background img 3"/></div>
   </div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer teal" id="contactus">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -99,5 +101,5 @@
 
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="footer" runat="server">
 </asp:Content>
